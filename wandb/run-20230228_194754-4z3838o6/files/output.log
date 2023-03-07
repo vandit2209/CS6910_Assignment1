@@ -1,0 +1,13 @@
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-images-idx3-ubyte.gz
+26421880/26421880 [==============================] - 1s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-labels-idx1-ubyte.gz
+5148/5148 [==============================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
+3579904/4422102 [=======================>......] - ETA: 0s
+No such comm: b143e3530448437296c5781f0a27b039
+No such comm: 9509040468d74a42be712e7e6fb1025e
+No such comm: 02c15a799ff3468193c59f196f1ba437
+No such comm: 0800e0e6376543a396855530f5bbdf9f
+No such comm: 0a77cc648e984ea18c0c0692ad964d03
+
+4422102/4422102 [==============================] - 1s 0us/step

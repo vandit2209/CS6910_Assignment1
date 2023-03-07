@@ -1,0 +1,234 @@
+2023-02-28 19:48:31,146 INFO    StreamThr :17943 [internal.py:wandb_internal():87] W&B internal server running at pid: 17943, started at: 2023-02-28 19:48:31.145105
+2023-02-28 19:48:31,147 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: status
+2023-02-28 19:48:31,148 INFO    WriterThread:17943 [datastore.py:open_for_write():85] open: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/run-sizqt5bq.wandb
+2023-02-28 19:48:31,149 DEBUG   SenderThread:17943 [sender.py:send():336] send: header
+2023-02-28 19:48:31,149 DEBUG   SenderThread:17943 [sender.py:send():336] send: run
+2023-02-28 19:48:32,193 INFO    SenderThread:17943 [dir_watcher.py:__init__():216] watching files in: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files
+2023-02-28 19:48:32,193 INFO    SenderThread:17943 [sender.py:_start_run_threads():1067] run started: sizqt5bq with start time 1677593910.146148
+2023-02-28 19:48:32,194 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: summary_record
+2023-02-28 19:48:32,194 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-28 19:48:32,200 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: check_version
+2023-02-28 19:48:32,200 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: check_version
+2023-02-28 19:48:32,393 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: run_start
+2023-02-28 19:48:32,394 DEBUG   HandlerThread:17943 [system_info.py:__init__():31] System info init
+2023-02-28 19:48:32,394 DEBUG   HandlerThread:17943 [system_info.py:__init__():46] System info init done
+2023-02-28 19:48:32,395 INFO    HandlerThread:17943 [system_monitor.py:start():151] Starting system monitor
+2023-02-28 19:48:32,395 INFO    SystemMonitor:17943 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-28 19:48:32,395 INFO    HandlerThread:17943 [system_monitor.py:probe():172] Collecting system info
+2023-02-28 19:48:32,395 INFO    SystemMonitor:17943 [interfaces.py:start():168] Started cpu
+2023-02-28 19:48:32,395 INFO    SystemMonitor:17943 [interfaces.py:start():168] Started disk
+2023-02-28 19:48:32,396 INFO    SystemMonitor:17943 [interfaces.py:start():168] Started gpuapple
+2023-02-28 19:48:32,396 INFO    SystemMonitor:17943 [interfaces.py:start():168] Started memory
+2023-02-28 19:48:32,399 DEBUG   HandlerThread:17943 [system_info.py:probe():195] Probing system
+2023-02-28 19:48:32,400 INFO    SystemMonitor:17943 [interfaces.py:start():168] Started network
+2023-02-28 19:48:32,402 DEBUG   HandlerThread:17943 [system_info.py:_probe_git():180] Probing git
+2023-02-28 19:48:32,432 DEBUG   HandlerThread:17943 [system_info.py:_probe_git():188] Probing git done
+2023-02-28 19:48:32,432 DEBUG   HandlerThread:17943 [system_info.py:probe():241] Probing system done
+2023-02-28 19:48:32,432 DEBUG   HandlerThread:17943 [system_monitor.py:probe():181] {'os': 'macOS-13.2.1-arm64-arm-64bit', 'python': '3.10.10', 'heartbeatAt': '2023-02-28T14:18:32.400966', 'startedAt': '2023-02-28T14:18:22.209517', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'feed_forward_neural_network-jvsc-1648dca6-9cd7-46f6-898c-b42d7a18ece7d87ea056-f97d-405f-9ce6-798ad5f86022.ipynb', 'root': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1', 'git': {'remote': 'https://github.com/vandit2209/CS6910_Assignment1.git', 'commit': 'f24724faf5a6483b312d6928b405591b7a2180d3'}, 'email': None, 'host': 'Vandit-PC.local', 'username': 'vanditshah', 'executable': '/opt/homebrew/opt/python@3.10/bin/python3.10', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'total': 460.4317207336426, 'used': 8.326961517333984}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2023-02-28 19:48:32,433 INFO    HandlerThread:17943 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-28 19:48:32,433 INFO    HandlerThread:17943 [system_monitor.py:probe():185] Publishing system info
+2023-02-28 19:48:32,433 DEBUG   HandlerThread:17943 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-28 19:48:32,433 DEBUG   HandlerThread:17943 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-28 19:48:32,434 INFO    HandlerThread:17943 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-28 19:48:32,434 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:32,434 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-02-28 19:48:32,443 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-28 19:48:32,443 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: stop_status
+2023-02-28 19:48:32,826 DEBUG   SenderThread:17943 [sender.py:send():336] send: telemetry
+2023-02-28 19:48:33,202 INFO    Thread-49 :17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-metadata.json
+2023-02-28 19:48:33,203 INFO    Thread-49 :17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-summary.json
+2023-02-28 19:48:33,203 INFO    Thread-49 :17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/requirements.txt
+2023-02-28 19:48:33,626 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,627 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/T-shirt_0_7f9147937f711e4ba16e.png with policy now
+2023-02-28 19:48:33,631 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,631 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Trouser_0_ba8afe5093296b9da95d.png with policy now
+2023-02-28 19:48:33,636 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,636 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Pullover_0_cd8689e0f2a035303171.png with policy now
+2023-02-28 19:48:33,640 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,640 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Dress_0_65989982ca9140b3494a.png with policy now
+2023-02-28 19:48:33,642 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,642 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Sandal_0_c994f021ba36204ca3c1.png with policy now
+2023-02-28 19:48:33,647 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,647 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Shirt_0_352ec8bcbb7f793c3857.png with policy now
+2023-02-28 19:48:33,651 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,651 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png with policy now
+2023-02-28 19:48:33,652 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,652 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Bag_0_4d144877c9093c197264.png with policy now
+2023-02-28 19:48:33,655 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,655 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Coat_0_f9ae28233f32bf80214f.png with policy now
+2023-02-28 19:48:33,658 DEBUG   SenderThread:17943 [sender.py:send():336] send: files
+2023-02-28 19:48:33,658 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png with policy now
+2023-02-28 19:48:33,658 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-28 19:48:33,660 DEBUG   SenderThread:17943 [sender.py:send():336] send: history
+2023-02-28 19:48:33,661 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: summary_record
+2023-02-28 19:48:33,661 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-28 19:48:33,661 DEBUG   SenderThread:17943 [sender.py:send():336] send: telemetry
+2023-02-28 19:48:33,661 DEBUG   SenderThread:17943 [sender.py:send():336] send: exit
+2023-02-28 19:48:33,662 INFO    SenderThread:17943 [sender.py:send_exit():559] handling exit code: 0
+2023-02-28 19:48:33,662 INFO    SenderThread:17943 [sender.py:send_exit():561] handling runtime: 1
+2023-02-28 19:48:33,663 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-28 19:48:33,664 INFO    SenderThread:17943 [sender.py:send_exit():567] send defer
+2023-02-28 19:48:33,664 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,664 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-28 19:48:33,664 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,664 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-02-28 19:48:33,664 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 1
+2023-02-28 19:48:33,664 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,665 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-28 19:48:33,665 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,665 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-02-28 19:48:33,665 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 2
+2023-02-28 19:48:33,665 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,665 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-28 19:48:33,665 INFO    HandlerThread:17943 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-28 19:48:33,681 DEBUG   SystemMonitor:17943 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-28 19:48:33,681 INFO    wandb-upload_0:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/opvy1gal-wandb-metadata.json
+2023-02-28 19:48:33,681 DEBUG   SystemMonitor:17943 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-28 19:48:33,681 DEBUG   SystemMonitor:17943 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-28 19:48:33,681 INFO    HandlerThread:17943 [interfaces.py:finish():175] Joined cpu
+2023-02-28 19:48:33,682 INFO    HandlerThread:17943 [interfaces.py:finish():175] Joined disk
+2023-02-28 19:48:33,682 INFO    HandlerThread:17943 [interfaces.py:finish():175] Joined gpuapple
+2023-02-28 19:48:33,682 INFO    HandlerThread:17943 [interfaces.py:finish():175] Joined memory
+2023-02-28 19:48:33,682 INFO    HandlerThread:17943 [interfaces.py:finish():175] Joined network
+2023-02-28 19:48:33,682 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,682 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-02-28 19:48:33,682 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 3
+2023-02-28 19:48:33,682 DEBUG   SenderThread:17943 [sender.py:send():336] send: telemetry
+2023-02-28 19:48:33,682 DEBUG   SenderThread:17943 [sender.py:send():336] send: stats
+2023-02-28 19:48:33,682 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,682 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-28 19:48:33,683 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,683 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-02-28 19:48:33,683 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 4
+2023-02-28 19:48:33,683 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,683 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-28 19:48:33,683 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,683 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-02-28 19:48:33,683 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 5
+2023-02-28 19:48:33,683 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,683 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-28 19:48:33,684 DEBUG   SenderThread:17943 [sender.py:send():336] send: summary
+2023-02-28 19:48:33,684 INFO    SenderThread:17943 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-28 19:48:33,684 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,684 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-02-28 19:48:33,684 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 6
+2023-02-28 19:48:33,684 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:33,684 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-28 19:48:33,684 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:33,684 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-02-28 19:48:33,687 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: status_report
+2023-02-28 19:48:34,095 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 7
+2023-02-28 19:48:34,095 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:34,095 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-28 19:48:34,096 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 8
+2023-02-28 19:48:34,096 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:34,096 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-28 19:48:34,096 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 9
+2023-02-28 19:48:34,096 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:34,096 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-28 19:48:34,096 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-02-28 19:48:34,096 INFO    SenderThread:17943 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-28 19:48:34,205 INFO    SenderThread:17943 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-summary.json
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/config.yaml
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Shirt_0_352ec8bcbb7f793c3857.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Dress_0_65989982ca9140b3494a.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/T-shirt_0_7f9147937f711e4ba16e.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Sandal_0_c994f021ba36204ca3c1.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Pullover_0_cd8689e0f2a035303171.png
+2023-02-28 19:48:34,206 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Coat_0_f9ae28233f32bf80214f.png
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Bag_0_4d144877c9093c197264.png
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Trouser_0_ba8afe5093296b9da95d.png
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:finish():392] scan: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/requirements.txt requirements.txt
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/config.yaml config.yaml
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-summary.json wandb-summary.json
+2023-02-28 19:48:34,207 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-metadata.json wandb-metadata.json
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Coat_0_f9ae28233f32bf80214f.png media/images/Coat_0_f9ae28233f32bf80214f.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Dress_0_65989982ca9140b3494a.png media/images/Dress_0_65989982ca9140b3494a.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Sandal_0_c994f021ba36204ca3c1.png media/images/Sandal_0_c994f021ba36204ca3c1.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Pullover_0_cd8689e0f2a035303171.png media/images/Pullover_0_cd8689e0f2a035303171.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Bag_0_4d144877c9093c197264.png media/images/Bag_0_4d144877c9093c197264.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Trouser_0_ba8afe5093296b9da95d.png media/images/Trouser_0_ba8afe5093296b9da95d.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/T-shirt_0_7f9147937f711e4ba16e.png media/images/T-shirt_0_7f9147937f711e4ba16e.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Shirt_0_352ec8bcbb7f793c3857.png media/images/Shirt_0_352ec8bcbb7f793c3857.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 10
+2023-02-28 19:48:34,208 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:34,208 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-28 19:48:34,208 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-02-28 19:48:34,208 INFO    SenderThread:17943 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-28 19:48:34,551 INFO    wandb-upload_2:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/d6ywawf6-media/images/Trouser_0_ba8afe5093296b9da95d.png
+2023-02-28 19:48:34,662 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-28 19:48:34,662 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: poll_exit
+2023-02-28 19:48:34,843 INFO    wandb-upload_5:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/u1l820lf-media/images/Sandal_0_c994f021ba36204ca3c1.png
+2023-02-28 19:48:34,848 INFO    wandb-upload_10:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/zg442k2x-media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png
+2023-02-28 19:48:34,866 INFO    wandb-upload_1:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/hxkqphdj-media/images/T-shirt_0_7f9147937f711e4ba16e.png
+2023-02-28 19:48:34,872 INFO    wandb-upload_8:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/alv6h7st-media/images/Bag_0_4d144877c9093c197264.png
+2023-02-28 19:48:34,885 INFO    wandb-upload_3:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/4azvmqe9-media/images/Pullover_0_cd8689e0f2a035303171.png
+2023-02-28 19:48:34,901 INFO    wandb-upload_6:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/m0wy1d0b-media/images/Shirt_0_352ec8bcbb7f793c3857.png
+2023-02-28 19:48:34,901 INFO    wandb-upload_4:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/uwjjg5v6-media/images/Dress_0_65989982ca9140b3494a.png
+2023-02-28 19:48:34,906 INFO    wandb-upload_9:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/ewc6r67c-media/images/Coat_0_f9ae28233f32bf80214f.png
+2023-02-28 19:48:34,950 INFO    wandb-upload_7:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/wzwkorf5-media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png
+2023-02-28 19:48:35,134 INFO    wandb-upload_0:17943 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/requirements.txt
+2023-02-28 19:48:35,435 INFO    wandb-upload_11:17943 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/config.yaml
+2023-02-28 19:48:35,477 INFO    wandb-upload_12:17943 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/files/wandb-summary.json
+2023-02-28 19:48:35,668 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-28 19:48:35,669 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: poll_exit
+2023-02-28 19:48:35,850 INFO    wandb-upload_8:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/5p923jnv-media/images/Pullover_0_cd8689e0f2a035303171.png
+2023-02-28 19:48:35,897 INFO    wandb-upload_3:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/w81o1jfn-media/images/Bag_0_4d144877c9093c197264.png
+2023-02-28 19:48:35,922 INFO    wandb-upload_10:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/m9076ya6-media/images/T-shirt_0_7f9147937f711e4ba16e.png
+2023-02-28 19:48:35,923 INFO    wandb-upload_2:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/tn9e1ga0-media/images/Ankle boot_0_adf48a208b1e9f1a3b47.png
+2023-02-28 19:48:35,938 INFO    wandb-upload_1:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/aarjh44t-media/images/Sandal_0_c994f021ba36204ca3c1.png
+2023-02-28 19:48:35,967 INFO    wandb-upload_5:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/g7fk2og7-media/images/Sneaker_0_c5a7eaa6a52ac0e794bb.png
+2023-02-28 19:48:35,976 INFO    wandb-upload_6:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/5wje92c2-media/images/Trouser_0_ba8afe5093296b9da95d.png
+2023-02-28 19:48:36,283 INFO    wandb-upload_4:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/rootonnt-media/images/Shirt_0_352ec8bcbb7f793c3857.png
+2023-02-28 19:48:36,460 INFO    wandb-upload_9:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/1z427p7i-media/images/Dress_0_65989982ca9140b3494a.png
+2023-02-28 19:48:36,540 INFO    wandb-upload_7:17943 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpkgiou4cpwandb/m0eu10gm-media/images/Coat_0_f9ae28233f32bf80214f.png
+2023-02-28 19:48:36,679 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-28 19:48:36,680 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: poll_exit
+2023-02-28 19:48:36,746 INFO    Thread-48 (_thread_body):17943 [sender.py:transition_state():587] send defer: 11
+2023-02-28 19:48:36,747 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:36,747 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-28 19:48:36,747 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:36,747 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-02-28 19:48:36,747 INFO    SenderThread:17943 [file_pusher.py:join():167] waiting for file pusher
+2023-02-28 19:48:36,747 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 12
+2023-02-28 19:48:36,748 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:36,748 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-28 19:48:36,748 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:36,748 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-02-28 19:48:37,085 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 13
+2023-02-28 19:48:37,087 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:37,087 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-28 19:48:37,087 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:37,087 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-02-28 19:48:37,088 INFO    SenderThread:17943 [sender.py:transition_state():587] send defer: 14
+2023-02-28 19:48:37,089 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: defer
+2023-02-28 19:48:37,089 DEBUG   SenderThread:17943 [sender.py:send():336] send: final
+2023-02-28 19:48:37,089 INFO    HandlerThread:17943 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-28 19:48:37,089 DEBUG   SenderThread:17943 [sender.py:send():336] send: footer
+2023-02-28 19:48:37,089 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: defer
+2023-02-28 19:48:37,089 INFO    SenderThread:17943 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-02-28 19:48:37,092 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-28 19:48:37,092 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: server_info
+2023-02-28 19:48:37,093 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-28 19:48:37,094 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-28 19:48:37,094 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: poll_exit
+2023-02-28 19:48:37,095 DEBUG   SenderThread:17943 [sender.py:send_request():363] send_request: server_info
+2023-02-28 19:48:38,029 DEBUG   HandlerThread:17943 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-28 19:48:38,029 INFO    HandlerThread:17943 [handler.py:finish():841] shutting down handler
+2023-02-28 19:48:38,098 INFO    WriterThread:17943 [datastore.py:close():299] close: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230228_194822-sizqt5bq/run-sizqt5bq.wandb
+2023-02-28 19:48:39,032 INFO    SenderThread:17943 [sender.py:finish():1493] shutting down sender
+2023-02-28 19:48:39,032 INFO    SenderThread:17943 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-28 19:48:39,032 INFO    SenderThread:17943 [file_pusher.py:join():167] waiting for file pusher

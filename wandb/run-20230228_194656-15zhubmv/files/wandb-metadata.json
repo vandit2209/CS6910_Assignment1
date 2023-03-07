@@ -1,0 +1,33 @@
+{
+    "os": "macOS-13.2.1-arm64-arm-64bit",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-02-28T14:16:57.513826",
+    "startedAt": "2023-02-28T14:16:56.280284",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "feed_forward_neural_network-jvsc-1648dca6-9cd7-46f6-898c-b42d7a18ece7d87ea056-f97d-405f-9ce6-798ad5f86022.ipynb",
+    "root": "/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1",
+    "git": {
+        "remote": "https://github.com/vandit2209/CS6910_Assignment1.git",
+        "commit": "f24724faf5a6483b312d6928b405591b7a2180d3"
+    },
+    "email": null,
+    "host": "Vandit-PC.local",
+    "username": "vanditshah",
+    "executable": "/opt/homebrew/opt/python@3.10/bin/python3.10",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 8.326961517333984
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}
