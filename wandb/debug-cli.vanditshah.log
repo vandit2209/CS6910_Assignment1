@@ -1,3 +1,221 @@
 2023-02-28 19:49:57 WARNING Connection pool is full, discarding connection: storage.googleapis.com. Connection pool size: 10
 2023-02-28 19:49:57 WARNING Connection pool is full, discarding connection: storage.googleapis.com. Connection pool size: 10
 2023-02-28 19:49:58 WARNING Connection pool is full, discarding connection: storage.googleapis.com. Connection pool size: 10
+2023-03-11 15:33:19 INFO Running runs: []
+2023-03-11 15:33:20 INFO Agent received command: run
+2023-03-11 15:33:20 INFO Agent starting run with config:
+	activations: identity
+	batch_size: 32
+	beta: 0.6999890450135271
+	beta1: 0.5946113229127674
+	beta2: 0.8016040225052219
+	dataset: mnist
+	epochs: 10
+	epsilon: 1e-08
+	hidden_size: 16
+	learning_rate: 0.0001
+	loss: mean_squared_error
+	momentum: 0.5038997207000697
+	num_layers: 4
+	optimizer: nag
+	output_activation: softmax
+	weight_decay: 0.0005
+	weight_init: xavier
+2023-03-11 15:33:20 INFO About to run command: /usr/bin/env python train.py --activations=identity --batch_size=32 --beta=0.6999890450135271 --beta1=0.5946113229127674 --beta2=0.8016040225052219 --dataset=mnist --epochs=10 --epsilon=1e-08 --hidden_size=16 --learning_rate=0.0001 --loss=mean_squared_error --momentum=0.5038997207000697 --num_layers=4 --optimizer=nag --output_activation=softmax --weight_decay=0.0005 --weight_init=xavier
+2023-03-11 15:33:25 INFO Running runs: ['yxl8f0zh']
+2023-03-11 15:33:25 INFO Cleaning up finished run: yxl8f0zh
+2023-03-11 15:33:26 INFO Agent received command: run
+2023-03-11 15:33:26 INFO Agent starting run with config:
+	activations: identity
+	batch_size: 128
+	beta: 0.8265548589438232
+	beta1: 0.8521138225074256
+	beta2: 0.7123159700381563
+	dataset: mnist
+	epochs: 5
+	epsilon: 1e-08
+	hidden_size: 32
+	learning_rate: 0.0002
+	loss: mean_squared_error
+	momentum: 0.5441808168071324
+	num_layers: 4
+	optimizer: rmsprop
+	output_activation: softmax
+	weight_decay: 0.0005
+	weight_init: random
+2023-03-11 15:33:26 INFO About to run command: /usr/bin/env python train.py --activations=identity --batch_size=128 --beta=0.8265548589438232 --beta1=0.8521138225074256 --beta2=0.7123159700381563 --dataset=mnist --epochs=5 --epsilon=1e-08 --hidden_size=32 --learning_rate=0.0002 --loss=mean_squared_error --momentum=0.5441808168071324 --num_layers=4 --optimizer=rmsprop --output_activation=softmax --weight_decay=0.0005 --weight_init=random
+2023-03-11 15:33:31 INFO Running runs: ['xioldmz2']
+2023-03-11 15:33:31 INFO Cleaning up finished run: xioldmz2
+2023-03-11 15:33:31 INFO Agent received command: run
+2023-03-11 15:33:31 INFO Agent starting run with config:
+	activations: tanh
+	batch_size: 128
+	beta: 0.9937069010546676
+	beta1: 0.7273352615628194
+	beta2: 0.652918515395762
+	dataset: mnist
+	epochs: 20
+	epsilon: 1e-08
+	hidden_size: 32
+	learning_rate: 0.0003
+	loss: cross_entropy
+	momentum: 0.7148158518999709
+	num_layers: 5
+	optimizer: nadam
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: xavier
+2023-03-11 15:33:31 INFO About to run command: /usr/bin/env python train.py --activations=tanh --batch_size=128 --beta=0.9937069010546676 --beta1=0.7273352615628194 --beta2=0.652918515395762 --dataset=mnist --epochs=20 --epsilon=1e-08 --hidden_size=32 --learning_rate=0.0003 --loss=cross_entropy --momentum=0.7148158518999709 --num_layers=5 --optimizer=nadam --output_activation=softmax --weight_decay=0 --weight_init=xavier
+2023-03-11 15:34:53 INFO Running runs: []
+2023-03-11 15:34:54 INFO Agent received command: run
+2023-03-11 15:34:54 INFO Agent starting run with config:
+	activations: sigmoid
+	batch_size: 16
+	beta: 0.757695455914333
+	beta1: 0.5223842245669579
+	beta2: 0.6992203899013272
+	dataset: fashion_mnist
+	epochs: 20
+	epsilon: 1e-08
+	hidden_size: 64
+	learning_rate: 0.0003
+	loss: cross_entropy
+	momentum: 0.6065776438200955
+	num_layers: 3
+	optimizer: momentum
+	output_activation: softmax
+	weight_decay: 0.0005
+	weight_init: xavier
+2023-03-11 15:34:54 INFO About to run command: /usr/bin/env python train.py --activations=sigmoid --batch_size=16 --beta=0.757695455914333 --beta1=0.5223842245669579 --beta2=0.6992203899013272 --dataset=fashion_mnist --epochs=20 --epsilon=1e-08 --hidden_size=64 --learning_rate=0.0003 --loss=cross_entropy --momentum=0.6065776438200955 --num_layers=3 --optimizer=momentum --output_activation=softmax --weight_decay=0.0005 --weight_init=xavier
+2023-03-11 15:34:59 INFO Running runs: ['vymmr4q3']
+2023-03-11 15:34:59 INFO Cleaning up finished run: vymmr4q3
+2023-03-11 15:34:59 INFO Agent received command: run
+2023-03-11 15:34:59 INFO Agent starting run with config:
+	activations: sigmoid
+	batch_size: 64
+	beta: 0.6735775802380016
+	beta1: 0.6214904810461633
+	beta2: 0.7954747356527818
+	dataset: mnist
+	epochs: 20
+	epsilon: 1e-08
+	hidden_size: 128
+	learning_rate: 0.001
+	loss: cross_entropy
+	momentum: 0.644523077934158
+	num_layers: 3
+	optimizer: momentum
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: random
+2023-03-11 15:34:59 INFO About to run command: /usr/bin/env python train.py --activations=sigmoid --batch_size=64 --beta=0.6735775802380016 --beta1=0.6214904810461633 --beta2=0.7954747356527818 --dataset=mnist --epochs=20 --epsilon=1e-08 --hidden_size=128 --learning_rate=0.001 --loss=cross_entropy --momentum=0.644523077934158 --num_layers=3 --optimizer=momentum --output_activation=softmax --weight_decay=0 --weight_init=random
+2023-03-11 15:36:58 INFO Running runs: []
+2023-03-11 15:36:58 INFO Agent received command: run
+2023-03-11 15:36:58 INFO Agent starting run with config:
+	activation: identity
+	batch_size: 16
+	beta: 0.8543785658851888
+	beta1: 0.9012793723993064
+	beta2: 0.7208498261421964
+	dataset: mnist
+	epochs: 5
+	epsilon: 1e-08
+	hidden_size: 64
+	learning_rate: 0.0003
+	loss: cross_entropy
+	momentum: 0.5351920839766872
+	num_layers: 4
+	optimizer: nag
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: xavier
+2023-03-11 15:36:58 INFO About to run command: /usr/bin/env python train.py --activation=identity --batch_size=16 --beta=0.8543785658851888 --beta1=0.9012793723993064 --beta2=0.7208498261421964 --dataset=mnist --epochs=5 --epsilon=1e-08 --hidden_size=64 --learning_rate=0.0003 --loss=cross_entropy --momentum=0.5351920839766872 --num_layers=4 --optimizer=nag --output_activation=softmax --weight_decay=0 --weight_init=xavier
+2023-03-11 15:37:03 INFO Running runs: ['3b7bkdw8']
+2023-03-11 15:38:18 INFO Running runs: []
+2023-03-11 15:38:18 INFO Agent received command: run
+2023-03-11 15:38:18 INFO Agent starting run with config:
+	activation: identity
+	batch_size: 16
+	beta: 0.7593704224296726
+	beta1: 0.8546910741671794
+	beta2: 0.9178229082216012
+	dataset: fashion_mnist
+	epochs: 20
+	epsilon: 1e-08
+	hidden_size: 64
+	learning_rate: 0.0002
+	loss: cross_entropy
+	momentum: 0.5751081163798433
+	num_layers: 4
+	optimizer: momentum
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: xavier
+2023-03-11 15:38:18 INFO About to run command: /usr/bin/env python train.py --activation=identity --batch_size=16 --beta=0.7593704224296726 --beta1=0.8546910741671794 --beta2=0.9178229082216012 --dataset=fashion_mnist --epochs=20 --epsilon=1e-08 --hidden_size=64 --learning_rate=0.0002 --loss=cross_entropy --momentum=0.5751081163798433 --num_layers=4 --optimizer=momentum --output_activation=softmax --weight_decay=0 --weight_init=xavier
+2023-03-11 15:38:23 INFO Running runs: ['n1x7l1ki']
+2023-03-11 15:39:53 INFO Running runs: []
+2023-03-11 15:39:54 INFO Agent received command: run
+2023-03-11 15:39:54 INFO Agent starting run with config:
+	activation: identity
+	batch_size: 16
+	beta: 0.7769192025984464
+	beta1: 0.7644305839614141
+	beta2: 0.5348020821024382
+	dataset: fashion_mnist
+	epochs: 10
+	epsilon: 1e-08
+	hidden_size: 256
+	learning_rate: 0.0001
+	loss: mean_squared_error
+	momentum: 0.5998188903240299
+	num_layers: 4
+	optimizer: sgd
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: random
+2023-03-11 15:39:54 INFO About to run command: /usr/bin/env python train.py --activation=identity --batch_size=16 --beta=0.7769192025984464 --beta1=0.7644305839614141 --beta2=0.5348020821024382 --dataset=fashion_mnist --epochs=10 --epsilon=1e-08 --hidden_size=256 --learning_rate=0.0001 --loss=mean_squared_error --momentum=0.5998188903240299 --num_layers=4 --optimizer=sgd --output_activation=softmax --weight_decay=0 --weight_init=random
+2023-03-11 15:39:59 INFO Running runs: ['yh8ph4zk']
+2023-03-11 15:40:44 INFO Running runs: []
+2023-03-11 15:40:45 INFO Agent received command: run
+2023-03-11 15:40:45 INFO Agent starting run with config:
+	activation: ReLU
+	batch_size: 16
+	beta: 0.7788731623762359
+	beta1: 0.623447915293714
+	beta2: 0.5896332217796969
+	dataset: mnist
+	epochs: 10
+	epsilon: 1e-08
+	hidden_size: 32
+	learning_rate: 0.001
+	loss: mean_squared_error
+	momentum: 0.5714413201677575
+	num_layers: 5
+	optimizer: momentum
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: random
+2023-03-11 15:40:45 INFO About to run command: /usr/bin/env python train.py --activation=ReLU --batch_size=16 --beta=0.7788731623762359 --beta1=0.623447915293714 --beta2=0.5896332217796969 --dataset=mnist --epochs=10 --epsilon=1e-08 --hidden_size=32 --learning_rate=0.001 --loss=mean_squared_error --momentum=0.5714413201677575 --num_layers=5 --optimizer=momentum --output_activation=softmax --weight_decay=0 --weight_init=random
+2023-03-11 15:40:50 INFO Running runs: ['0e4268hb']
+2023-03-11 15:43:18 INFO Running runs: []
+2023-03-11 15:43:19 INFO Agent received command: run
+2023-03-11 15:43:19 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 32
+	beta: 0.812180276482569
+	beta1: 0.743375734076317
+	beta2: 0.5035526462727477
+	dataset: mnist
+	epochs: 5
+	epsilon: 1e-08
+	hidden_size: 16
+	learning_rate: 0.001
+	loss: cross_entropy
+	momentum: 0.5702691413050186
+	num_layers: 3
+	optimizer: nadam
+	output_activation: softmax
+	weight_decay: 0.0005
+	weight_init: xavier
+2023-03-11 15:43:19 INFO About to run command: /usr/bin/env python train.py --activation=sigmoid --batch_size=32 --beta=0.812180276482569 --beta1=0.743375734076317 --beta2=0.5035526462727477 --dataset=mnist --epochs=5 --epsilon=1e-08 --hidden_size=16 --learning_rate=0.001 --loss=cross_entropy --momentum=0.5702691413050186 --num_layers=3 --optimizer=nadam --output_activation=softmax --weight_decay=0.0005 --weight_init=xavier
+2023-03-11 15:43:24 INFO Running runs: ['dau45y1o']

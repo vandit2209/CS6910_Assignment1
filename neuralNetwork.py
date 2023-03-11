@@ -28,6 +28,7 @@ class NeuralNetwork:
         self.activation = ActiviationFunction(arguments.activation)
         self.outputActivation = ActiviationFunction(arguments.output_activation)
         self.loss = LossFunction(arguments.loss)
+        self.init_parameters()
 
     def load_dataset(self):
         preprocessor = StandardScaler()
@@ -98,7 +99,7 @@ class NeuralNetwork:
     def forward_propagation(self, data):
         self.a = {}  # preactivation
         self.h = {}  # activation
-        self.h["h0"] = data.T
+        self.h["h0"] = data.reshape(len(data), 1)
         
         for i in range(1, self.n_layers - 1):
             self.a[f"a{i}"] = np.matmul(self.parameters[f"W{i}"].T,self.h[f"h{i-1}"]) + self.parameters[f"b{i}"]

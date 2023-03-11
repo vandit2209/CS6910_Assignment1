@@ -1,0 +1,44 @@
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Configure stats pid to 11223
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from /Users/vanditshah/.config/wandb/settings
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/settings
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'cs22m092', 'project': 'CS6910_Assignment1', 'sweep_id': '40sq9epy', 'root_dir': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1', 'run_id': 'kf1ykuyg', 'sweep_param_path': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/sweep-40sq9epy/config-kf1ykuyg.yaml'}
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/train.py'}
+2023-03-11 15:38:24,187 INFO    Thread-2 (_run_job):11223 [wandb_init.py:_log_setup():492] Logging user logs to /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_153824-kf1ykuyg/logs/debug.log
+2023-03-11 15:38:24,188 INFO    Thread-2 (_run_job):11223 [wandb_init.py:_log_setup():493] Logging internal logs to /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_153824-kf1ykuyg/logs/debug-internal.log
+2023-03-11 15:38:24,188 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():532] calling init triggers
+2023-03-11 15:38:24,188 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activations': 'identity', 'batch_size': 32, 'beta': 0.94186008088874, 'beta1': 0.9656967956175062, 'beta2': 0.843317279576402, 'dataset': 'mnist', 'epochs': 20, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.8760073883701298, 'num_layers': 5, 'optimizer': 'nag', 'output_activation': 'softmax', 'weight_decay': 0.0005, 'weight_init': 'random'}
+config: {}
+2023-03-11 15:38:24,188 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():588] starting backend
+2023-03-11 15:38:24,188 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():592] setting up manager
+2023-03-11 15:38:24,203 INFO    Thread-2 (_run_job):11223 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-03-11 15:38:24,209 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():599] backend started and connected
+2023-03-11 15:38:24,213 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_config_callback():1250] config_cb None None {'activations': 'identity', 'batch_size': 32, 'beta': 0.94186008088874, 'beta1': 0.9656967956175062, 'beta2': 0.843317279576402, 'dataset': 'mnist', 'epochs': 20, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.8760073883701298, 'num_layers': 5, 'optimizer': 'nag', 'output_activation': 'softmax', 'weight_decay': 0.0005, 'weight_init': 'random'}
+2023-03-11 15:38:24,216 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():687] updated telemetry
+2023-03-11 15:38:24,238 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 15:38:25,033 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 15:38:25,083 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 15:38:25,083 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 15:38:25,155 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 15:38:25,155 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 15:38:25,156 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 15:38:25,156 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 15:38:25,156 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Configure stats pid to 11223
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from /Users/vanditshah/.config/wandb/settings
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/settings
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'entity': 'cs22m092', 'project': 'CS6910_Assignment1', 'sweep_id': '40sq9epy', 'root_dir': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1', 'run_id': 'kf1ykuyg', 'sweep_param_path': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/sweep-40sq9epy/config-kf1ykuyg.yaml'}
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/train.py'}
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_init.py:_log_setup():492] Logging user logs to /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_153825-kf1ykuyg/logs/debug.log
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_init.py:_log_setup():493] Logging internal logs to /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_153825-kf1ykuyg/logs/debug-internal.log
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():532] calling init triggers
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activations': 'identity', 'batch_size': 32, 'beta': 0.94186008088874, 'beta1': 0.9656967956175062, 'beta2': 0.843317279576402, 'dataset': 'mnist', 'epochs': 20, 'epsilon': 1e-08, 'hidden_size': 32, 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'momentum': 0.8760073883701298, 'num_layers': 5, 'optimizer': 'nag', 'output_activation': 'softmax', 'weight_decay': 0.0005, 'weight_init': 'random'}
+config: {}
+2023-03-11 15:38:25,160 INFO    Thread-2 (_run_job):11223 [wandb_init.py:init():583] wandb.init() called when a run is still active
+2023-03-11 15:38:26,009 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_finish():1854] finishing run cs22m092/CS6910_Assignment1/kf1ykuyg
+2023-03-11 15:38:26,009 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 1
+2023-03-11 15:38:26,009 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_restore():2066] restore
+2023-03-11 15:38:26,009 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_restore():2072] restore done
+2023-03-11 15:38:30,389 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 15:38:30,390 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 15:38:30,393 INFO    Thread-2 (_run_job):11223 [wandb_run.py:_footer_sync_info():3398] logging synced files

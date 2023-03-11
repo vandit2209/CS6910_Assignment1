@@ -1,0 +1,36 @@
+wandb_version: 1
+
+activations:
+  value: tanh
+batch_size:
+  value: 16
+beta:
+  value: 0.6614077500846567
+beta1:
+  value: 0.6080480109458887
+beta2:
+  value: 0.8433341459463837
+dataset:
+  value: fashion_mnist
+epochs:
+  value: 10
+epsilon:
+  value: 1.0e-08
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.001
+loss:
+  value: cross_entropy
+momentum:
+  value: 0.9603763369783233
+num_layers:
+  value: 5
+optimizer:
+  value: momentum
+output_activation:
+  value: softmax
+weight_decay:
+  value: 0.0005
+weight_init:
+  value: xavier

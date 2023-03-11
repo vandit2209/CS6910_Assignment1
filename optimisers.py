@@ -1,6 +1,7 @@
 import wandb
 import numpy as np
 from tqdm.notebook import tqdm
+from neuralNetwork import NeuralNetwork
 class Optimiser(NeuralNetwork):
     def __init__(self, arguments):
         super().__init__(arguments)
@@ -16,7 +17,7 @@ class Optimiser(NeuralNetwork):
             if "W" in key or "b" in key:
                 self.parameters_without_activations[key] = value
     
-    def generateMetrics(self, x_data, y_data, _type = ""):
+    def generateMetrics(self, x_data, y_data, epoch, _type = ""):
         predictions = []
         y = []
         yhat = []
@@ -36,12 +37,12 @@ class Optimiser(NeuralNetwork):
 
         print(f"{_type} Accuracy: {accuracy}", end = " ")
         print(f"{_type} Loss: {loss}", end = "\n")
-        wandb.log({f"{_type}_acc": accuracy, f"{_type}_loss": loss})
+        wandb.log({f"{_type}_acc": accuracy, f"{_type}_loss": loss, "epoch": epoch})
         return yhat, y, accuracy*100, loss
     
     def stochastic_gradient_descent(self):
         _parameters = self.parameters_without_activations
-        for i in tqdm(range(self.epochs), desc="Epochs"):
+        for epoch in tqdm(range(self.epochs), desc="Epochs"):
             gradients = self.gradsInit()
             for id, x, y in tqdm(enumerate(zip(self.x_train, self.y_train)), desc = "Optimizer class = Stochastic Gradient Descent", leave = False):
                 self.forward_propagation(x)
@@ -55,9 +56,9 @@ class Optimiser(NeuralNetwork):
                         gradients = self.gradsInit()
         
         
-        self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-        self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-        self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
 
         self.update_parameters()
     
@@ -65,7 +66,7 @@ class Optimiser(NeuralNetwork):
         self.momentum = self.args_backup.momentum
         _parameters = self.parameters_without_activations
         _global = self.gradsInit()
-        for i in tqdm(range(self.epochs), desc="Epochs"):
+        for epoch in tqdm(range(self.epochs), desc="Epochs"):
             gradients = self.gradsInit()
             lookahead = self.gradsInit()
             for id, x, y in tqdm(enumerate(zip(self.x_train, self.y_train)), desc = "Optimizer class = Momentum Based Gradient Descent", leave = False):
@@ -84,9 +85,9 @@ class Optimiser(NeuralNetwork):
                     
                     gradients = self.gradsInit()
         
-            self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-            self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-            self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
             
         self.update_parameters()
     
@@ -94,7 +95,7 @@ class Optimiser(NeuralNetwork):
         self.momentum = self.args_backup.momentum # beta
         _parameters = self.parameters_without_activations
         _global = self.gradsInit()
-        for i in tqdm(range(self.epochs), desc="Epochs"):
+        for epoch in tqdm(range(self.epochs), desc="Epochs"):
             gradients = self.gradsInit()
             lookahead = self.gradsInit()
 
@@ -119,9 +120,9 @@ class Optimiser(NeuralNetwork):
 
                         gradients = self.gradsInit()
 
-            self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-            self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-            self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
 
         self.update_parameters()
     
@@ -130,7 +131,7 @@ class Optimiser(NeuralNetwork):
         self.epsilon = self.args_backup.epsilon
         _parameters = self.parameters_without_activations
         _global = self.gradsInit()
-        for i in tqdm(range(self.epochs), desc="Epochs"):
+        for epoch in tqdm(range(self.epochs), desc="Epochs"):
             gradients = self.gradsInit()
             for id, x, y in tqdm(enumerate(zip(self.x_train, self.y_train)), desc = "Optimizer class = RMS Prop", leave = False):
                 self.forward_propagation(x)
@@ -148,9 +149,9 @@ class Optimiser(NeuralNetwork):
                     gradients = self.gradsInit()
         
 
-            self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-            self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-            self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
 
         self.update_parameters()
     
@@ -193,9 +194,9 @@ class Optimiser(NeuralNetwork):
                     
                     gradients = self.gradsInit()
                 
-            self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-            self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-            self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
 
         self.update_parameters()
     
@@ -248,11 +249,25 @@ class Optimiser(NeuralNetwork):
                     
                     gradients = self.gradsInit()
             
-            self.generateMetrics(self.x_val, self.y_val, _type = "Validation")
-            self.generateMetrics(self.x_val, self.y_val, _type = "Train")
-            self.generateMetrics(self.x_test, self.y_test, _type = "Test")
+            self.generateMetrics(self.x_val, self.y_val, epoch, _type = "Validation")
+            self.generateMetrics(self.x_val, self.y_val,epoch, _type = "Train")
+            self.generateMetrics(self.x_test, self.y_test, epoch,_type = "Test")
 
         self.update_parameters()
-    
 
+    def train(self):
+        if self.optimizer_name == "sgd":
+            self.stochastic_gradient_descent()
+        elif self.optimizer_name == "momentum":
+            self.moment_based_gradient_descent()
+        elif self.optimizer_name == "nag":
+            self.nestrov_gradient_descent()
+        elif self.optimizer_name == "rmsprop":
+            self.rms_prop()
+        elif self.optimizer_name == "adam":
+            self.adam()
+        elif self.optimizer_name == "nadam":
+            self.nadam()
+        else:
+            raise Exception('The choice of optimizer is not found. Please select from ["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"]')
     

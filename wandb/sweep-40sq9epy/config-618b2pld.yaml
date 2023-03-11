@@ -1,0 +1,36 @@
+wandb_version: 1
+
+activations:
+  value: sigmoid
+batch_size:
+  value: 16
+beta:
+  value: 0.9939092105315256
+beta1:
+  value: 0.5555360163608835
+beta2:
+  value: 0.8129208467726916
+dataset:
+  value: mnist
+epochs:
+  value: 10
+epsilon:
+  value: 1.0e-08
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.0003
+loss:
+  value: cross_entropy
+momentum:
+  value: 0.5869557500622531
+num_layers:
+  value: 4
+optimizer:
+  value: adam
+output_activation:
+  value: softmax
+weight_decay:
+  value: 0
+weight_init:
+  value: random

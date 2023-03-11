@@ -1,0 +1,52 @@
+{
+    "os": "macOS-13.2.1-arm64-arm-64bit",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-03-11T10:10:11.873805",
+    "startedAt": "2023-03-11T10:10:11.016559",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--activation=identity",
+        "--batch_size=16",
+        "--beta=0.7769192025984464",
+        "--beta1=0.7644305839614141",
+        "--beta2=0.5348020821024382",
+        "--dataset=fashion_mnist",
+        "--epochs=10",
+        "--epsilon=1e-08",
+        "--hidden_size=256",
+        "--learning_rate=0.0001",
+        "--loss=mean_squared_error",
+        "--momentum=0.5998188903240299",
+        "--num_layers=4",
+        "--optimizer=sgd",
+        "--output_activation=softmax",
+        "--weight_decay=0",
+        "--weight_init=random"
+    ],
+    "state": "running",
+    "program": "/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/vandit2209/CS6910_Assignment1.git",
+        "commit": "e941ee56273e296232decf67523ac2a4362ca55c"
+    },
+    "email": "vanditshah.2209@gmail.com",
+    "root": "/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1",
+    "host": "Vandit-PC.local",
+    "username": "vanditshah",
+    "executable": "/opt/homebrew/opt/python@3.10/bin/python3.10",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 8.326950073242188
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

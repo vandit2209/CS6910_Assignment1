@@ -32,13 +32,13 @@ parameters:
     value: 0.00000001
   weight_decay: 
     values : [0,0.0005]
-  weight_ini:
+  weight_init:
     values: ['random','xavier']
   num_layers: 
     values: [3,4,5]
   hidden_size: 
     values: [16,32,64,128,256]
-  activations:
+  activation:
     values: ["identity", "sigmoid", "tanh", "ReLU"]
   output_activation:
     value: "softmax"
