@@ -1,3 +1,9 @@
+from activations import ActiviationFunction
+from loss import LossFunction
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+from keras.utils.np_utils import to_categorical
+from sklearn.model_selection import train_test_split
 class NeuralNetwork:
     def __init__(self, arguments) -> None:
         self.args_backup = arguments # is saved for later variable purposes
@@ -16,7 +22,7 @@ class NeuralNetwork:
 
         self.load_dataset()
 
-        self.layers = [self.x_train.shape[1]] + self.neurons_h_layers + [self.y_train[0].shape[0]]
+        self.layers = [self.x_train.shape[1]] + [self.neurons_h_layers]*self.n_hidden_layers + [self.y_train[0].shape[0]]
         self.n_layers = self.n_hidden_layers + 2
 
         self.activation = ActiviationFunction(arguments.activation)
@@ -28,26 +34,29 @@ class NeuralNetwork:
         if self.dataset_name == "fashion_mnist":
             from keras.datasets import fashion_mnist
             (self.x_train, self.y_train), (self.x_test, self.y_test) = fashion_mnist.load_data()
-
-            self.x_train = self.x_train.astype('float64')
-            self.y_train = self.y_train.astype('float64')
-            self.x_test = self.x_test.astype('float64')
-            self.y_test = self.y_test.astype('float64')
-
-            self.x_train = self.x_train.reshape(self.x_train.shape[0],self.x_train.shape[1]*self.x_train.shape[2])
-            self.x_train = preprocessor.fit_transform(self.x_train)
-            self.y_train = self.y_train.reshape(self.y_train.shape[0],1)
-            self.y_train = to_categorical(self.y_train)
-
-            self.x_test = self.x_test.reshape(self.x_test.shape[0],self.x_test.shape[1]*self.x_test.shape[2])
-            self.x_test = preprocessor.fit_transform(self.x_test)
-            self.y_test = self.y_test.reshape(self.y_test.shape[0],1)
-            self.y_test = to_categorical(self.y_test)
-
-            self.x_train, self.x_val, self.y_train, self.y_val = train_test_split(self.x_train, self.y_train, test_size=0.10, random_state=42)
-            
+        elif self.dataset_name == "mnist":
+            from keras.datasets import mnist
+            (self.x_train, self.y_train), (self.x_test, self.y_test) = mnist.load_data()
         else:
-            pass
+            print("404 Dataset Not Found!")
+            return
+
+        self.x_train = self.x_train.astype('float64')
+        self.y_train = self.y_train.astype('float64')
+        self.x_test = self.x_test.astype('float64')
+        self.y_test = self.y_test.astype('float64')
+
+        self.x_train = self.x_train.reshape(self.x_train.shape[0],self.x_train.shape[1]*self.x_train.shape[2])
+        self.x_train = preprocessor.fit_transform(self.x_train)
+        self.y_train = self.y_train.reshape(self.y_train.shape[0],1)
+        self.y_train = to_categorical(self.y_train)
+
+        self.x_test = self.x_test.reshape(self.x_test.shape[0],self.x_test.shape[1]*self.x_test.shape[2])
+        self.x_test = preprocessor.fit_transform(self.x_test)
+        self.y_test = self.y_test.reshape(self.y_test.shape[0],1)
+        self.y_test = to_categorical(self.y_test)
+
+        self.x_train, self.x_val, self.y_train, self.y_val = train_test_split(self.x_train, self.y_train, test_size=0.10, random_state=42)
     
     def init_parameters(self, debug = False):
         if self.args_backup.weight_init == "random":

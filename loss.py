@@ -1,3 +1,4 @@
+import numpy as np
 class LossFunction:
     def __init__(self, name):
         self.name = name

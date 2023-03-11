@@ -1,3 +1,4 @@
+import numpy as np
 class ActiviationFunction:
     def __init__(self, name):
         self.act_name = name
