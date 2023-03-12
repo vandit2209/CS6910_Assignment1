@@ -1,0 +1,36 @@
+wandb_version: 1
+
+activation:
+  value: identity
+batch_size:
+  value: 64
+beta:
+  value: 0.5152364497360213
+beta1:
+  value: 0.5066053420903305
+beta2:
+  value: 0.7540196808684809
+dataset:
+  value: mnist
+epochs:
+  value: 5
+epsilon:
+  value: 1.0e-08
+hidden_size:
+  value: 256
+learning_rate:
+  value: 0.0001
+loss:
+  value: cross_entropy
+momentum:
+  value: 0.950155689345262
+num_layers:
+  value: 4
+optimizer:
+  value: momentum
+output_activation:
+  value: softmax
+weight_decay:
+  value: 0.0005
+weight_init:
+  value: random

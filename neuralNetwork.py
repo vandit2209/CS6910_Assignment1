@@ -28,7 +28,7 @@ class NeuralNetwork:
         self.activation = ActiviationFunction(arguments.activation)
         self.outputActivation = ActiviationFunction(arguments.output_activation)
         self.loss = LossFunction(arguments.loss)
-        self.init_parameters()
+        self.init_parameters(debug=True)
 
     def load_dataset(self):
         preprocessor = StandardScaler()
@@ -102,23 +102,26 @@ class NeuralNetwork:
         self.h["h0"] = data.reshape(len(data), 1)
         
         for i in range(1, self.n_layers - 1):
-            self.a[f"a{i}"] = np.matmul(self.parameters[f"W{i}"].T,self.h[f"h{i-1}"]) + self.parameters[f"b{i}"]
+            print(f"W{self.parameters[f'W{i}'].shape} x h{self.h[f'h{i-1}'].shape} + b{self.parameters[f'b{i}'].shape}")
+            self.a[f"a{i}"] = np.matmul(self.parameters[f"W{i}"],self.h[f"h{i-1}"]) + self.parameters[f"b{i}"]
             self.h[f"h{i}"] = self.activation.activate(self.a[f"a{i}"])
         
         # for output layer
-        self.a[f"a{self.n_layers-1}"] = np.matmul(self.parameters[f"W{self.n_layers-1}"].T,self.h[f"h{self.n_layers-2}"]) + self.parameters[f"b{self.n_layers-1}"]
-        self.h[f"h{self.n_layers - 1}"] = self.outputActivation.activate(self.a[f"a{i}"])
+        self.a[f"a{self.n_layers-1}"] = np.matmul(self.parameters[f"W{self.n_layers-1}"],self.h[f"h{self.n_layers-2}"]) + self.parameters[f"b{self.n_layers-1}"]
+        self.h[f"h{self.n_layers - 1}"] = self.outputActivation.activate(self.a[f"a{self.n_layers - 1}"])
     
 
     def back_propagation(self, data):
         gradients = {}
+        print(self.h['h4'])
         gradients[f"a{self.n_layers - 1}"] = self.loss.getGradient(data.T, self.h[f"h{self.n_layers - 1}"])
         for i in range(self.n_layers - 1, 1, -1):
-            gradients[f"W{i}"] = np.dot(gradients[f'a{i}'], self.h[f'h{i-1}'])
+            gradients[f"W{i}"] = np.outer(gradients[f'a{i}'], self.h[f'h{i-1}'])
             gradients[[f"b{i}"]] = gradients[f"a{i}"]
             gradients[f"h{i-1}"] = np.dot(self.parameters[f"W{i}"].T, gradients[f"a{i}"])
             gradients[f"a{i-1}"] = gradients[f"h{i-1}"] * self.activation.activate(self.a[f"a{i-1}"], backprop=True)
         
+        # for the first layer
         gradients[f"W{1}"] = np.dot(gradients[f'a{1}'], self.h[f'h{1-1}'])
         gradients[[f"b{1}"]] = gradients[f"a{1}"]
         gradients[f"h{1-1}"] = np.dot(self.parameters[f"W{1}"].T, gradients[f"a{1}"])

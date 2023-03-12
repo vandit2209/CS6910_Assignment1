@@ -219,3 +219,47 @@
 	weight_init: xavier
 2023-03-11 15:43:19 INFO About to run command: /usr/bin/env python train.py --activation=sigmoid --batch_size=32 --beta=0.812180276482569 --beta1=0.743375734076317 --beta2=0.5035526462727477 --dataset=mnist --epochs=5 --epsilon=1e-08 --hidden_size=16 --learning_rate=0.001 --loss=cross_entropy --momentum=0.5702691413050186 --num_layers=3 --optimizer=nadam --output_activation=softmax --weight_decay=0.0005 --weight_init=xavier
 2023-03-11 15:43:24 INFO Running runs: ['dau45y1o']
+2023-03-11 15:44:39 INFO Running runs: []
+2023-03-11 15:44:40 INFO Agent received command: run
+2023-03-11 15:44:40 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 128
+	beta: 0.9513586521112742
+	beta1: 0.5407785891939594
+	beta2: 0.8057068194043194
+	dataset: fashion_mnist
+	epochs: 20
+	epsilon: 1e-08
+	hidden_size: 64
+	learning_rate: 0.001
+	loss: mean_squared_error
+	momentum: 0.8435650098646696
+	num_layers: 3
+	optimizer: momentum
+	output_activation: softmax
+	weight_decay: 0
+	weight_init: xavier
+2023-03-11 15:44:40 INFO About to run command: /usr/bin/env python train.py --activation=sigmoid --batch_size=128 --beta=0.9513586521112742 --beta1=0.5407785891939594 --beta2=0.8057068194043194 --dataset=fashion_mnist --epochs=20 --epsilon=1e-08 --hidden_size=64 --learning_rate=0.001 --loss=mean_squared_error --momentum=0.8435650098646696 --num_layers=3 --optimizer=momentum --output_activation=softmax --weight_decay=0 --weight_init=xavier
+2023-03-11 15:44:45 INFO Running runs: ['15vr85zp']
+2023-03-11 15:47:11 INFO Running runs: []
+2023-03-11 15:47:12 INFO Agent received command: run
+2023-03-11 15:47:12 INFO Agent starting run with config:
+	activation: sigmoid
+	batch_size: 64
+	beta: 0.7756623221671055
+	beta1: 0.7912446366933534
+	beta2: 0.7977300326812835
+	dataset: fashion_mnist
+	epochs: 5
+	epsilon: 1e-08
+	hidden_size: 32
+	learning_rate: 0.001
+	loss: mean_squared_error
+	momentum: 0.9569216376521988
+	num_layers: 3
+	optimizer: nadam
+	output_activation: softmax
+	weight_decay: 0.0005
+	weight_init: random
+2023-03-11 15:47:12 INFO About to run command: /usr/bin/env python train.py --activation=sigmoid --batch_size=64 --beta=0.7756623221671055 --beta1=0.7912446366933534 --beta2=0.7977300326812835 --dataset=fashion_mnist --epochs=5 --epsilon=1e-08 --hidden_size=32 --learning_rate=0.001 --loss=mean_squared_error --momentum=0.9569216376521988 --num_layers=3 --optimizer=nadam --output_activation=softmax --weight_decay=0.0005 --weight_init=random
+2023-03-11 15:47:17 INFO Running runs: ['r3rho9ta']

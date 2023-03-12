@@ -1,0 +1,36 @@
+wandb_version: 1
+
+activations:
+  value: ReLU
+batch_size:
+  value: 128
+beta:
+  value: 0.6586533886685866
+beta1:
+  value: 0.665588205596126
+beta2:
+  value: 0.8928754803367417
+dataset:
+  value: fashion_mnist
+epochs:
+  value: 10
+epsilon:
+  value: 1.0e-08
+hidden_size:
+  value: 256
+learning_rate:
+  value: 0.0003
+loss:
+  value: mean_squared_error
+momentum:
+  value: 0.6605664854988684
+num_layers:
+  value: 4
+optimizer:
+  value: momentum
+output_activation:
+  value: softmax
+weight_decay:
+  value: 0.0005
+weight_init:
+  value: xavier

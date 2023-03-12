@@ -5,7 +5,7 @@ from neuralNetwork import NeuralNetwork
 class Optimiser(NeuralNetwork):
     def __init__(self, arguments):
         super().__init__(arguments)
-        self.parameters_without_activations = None
+        self.parameters_without_activations = dict()
         self.separate_weights_and_biases()
     
     def update_parameters(self):
@@ -37,14 +37,17 @@ class Optimiser(NeuralNetwork):
 
         print(f"{_type} Accuracy: {accuracy}", end = " ")
         print(f"{_type} Loss: {loss}", end = "\n")
-        wandb.log({f"{_type}_acc": accuracy, f"{_type}_loss": loss, "epoch": epoch})
+        # wandb.log({f"{_type}_acc": accuracy, f"{_type}_loss": loss, "epoch": epoch})
         return yhat, y, accuracy*100, loss
     
     def stochastic_gradient_descent(self):
         _parameters = self.parameters_without_activations
         for epoch in tqdm(range(self.epochs), desc="Epochs"):
             gradients = self.gradsInit()
-            for id, x, y in tqdm(enumerate(zip(self.x_train, self.y_train)), desc = "Optimizer class = Stochastic Gradient Descent", leave = False):
+            for id, xy in tqdm(enumerate(zip(self.x_train, self.y_train)), desc = "Optimizer class = Stochastic Gradient Descent", leave = False):
+                print(id, xy[0].shape, xy[1].shape)
+                x = xy[0]
+                y = xy[1]
                 self.forward_propagation(x)
                 delta = self.back_propagation(y)
                 for key in gradients.keys():

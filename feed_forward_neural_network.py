@@ -119,7 +119,7 @@ class NeuralNetwork:
 
         self.load_dataset()
 
-        self.layers = [self.x_train.shape[1]] + self.neurons_h_layers + [self.y_train[0].shape[0]]
+        self.layers = [self.x_train.shape[1]] + [self.neurons_h_layers]*self.n_hidden_layers + [self.y_train[0].shape[0]]
         self.n_layers = self.n_hidden_layers + 2
 
         self.activation = ActiviationFunction(arguments.activation)

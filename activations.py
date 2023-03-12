@@ -8,6 +8,7 @@ class ActiviationFunction:
         self.act_name = new_name
 
     def activate(self, data, backprop = False):
+        print(self.act_name)
         if self.act_name == "identity" and backprop:
             pass
         elif self.act_name == "identity" and not backprop:
@@ -24,6 +25,11 @@ class ActiviationFunction:
             pass
         elif self.act_name == "ReLU" and not backprop:
             return self.tanh(data)
+        elif self.act_name == "softmax" and not backprop:
+            return self.softmax(data)
+        elif self.act_name == "softmax" and backprop:
+            return self.backprop_softmax(data)
+        
 
     
     def identity(self, data):

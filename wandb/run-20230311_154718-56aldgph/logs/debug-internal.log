@@ -1,0 +1,167 @@
+2023-03-11 15:47:18,081 INFO    StreamThr :12654 [internal.py:wandb_internal():87] W&B internal server running at pid: 12654, started at: 2023-03-11 15:47:18.080678
+2023-03-11 15:47:18,082 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: status
+2023-03-11 15:47:18,089 INFO    WriterThread:12654 [datastore.py:open_for_write():85] open: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/run-56aldgph.wandb
+2023-03-11 15:47:18,090 DEBUG   SenderThread:12654 [sender.py:send():336] send: header
+2023-03-11 15:47:18,112 DEBUG   SenderThread:12654 [sender.py:send():336] send: run
+2023-03-11 15:47:18,838 INFO    SenderThread:12654 [dir_watcher.py:__init__():216] watching files in: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files
+2023-03-11 15:47:18,839 INFO    SenderThread:12654 [sender.py:_start_run_threads():1067] run started: 56aldgph with start time 1678529838.08163
+2023-03-11 15:47:18,839 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 15:47:18,839 INFO    SenderThread:12654 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 15:47:18,842 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: check_version
+2023-03-11 15:47:18,843 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: check_version
+2023-03-11 15:47:18,908 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: run_start
+2023-03-11 15:47:18,918 DEBUG   HandlerThread:12654 [system_info.py:__init__():31] System info init
+2023-03-11 15:47:18,919 DEBUG   HandlerThread:12654 [system_info.py:__init__():46] System info init done
+2023-03-11 15:47:18,919 INFO    HandlerThread:12654 [system_monitor.py:start():151] Starting system monitor
+2023-03-11 15:47:18,919 INFO    SystemMonitor:12654 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-11 15:47:18,919 INFO    HandlerThread:12654 [system_monitor.py:probe():172] Collecting system info
+2023-03-11 15:47:18,919 INFO    SystemMonitor:12654 [interfaces.py:start():168] Started cpu
+2023-03-11 15:47:18,919 INFO    SystemMonitor:12654 [interfaces.py:start():168] Started disk
+2023-03-11 15:47:18,920 INFO    SystemMonitor:12654 [interfaces.py:start():168] Started gpuapple
+2023-03-11 15:47:18,920 DEBUG   HandlerThread:12654 [system_info.py:probe():195] Probing system
+2023-03-11 15:47:18,920 INFO    SystemMonitor:12654 [interfaces.py:start():168] Started memory
+2023-03-11 15:47:18,922 INFO    SystemMonitor:12654 [interfaces.py:start():168] Started network
+2023-03-11 15:47:18,927 DEBUG   HandlerThread:12654 [system_info.py:_probe_git():180] Probing git
+2023-03-11 15:47:18,955 DEBUG   HandlerThread:12654 [system_info.py:_probe_git():188] Probing git done
+2023-03-11 15:47:18,956 DEBUG   HandlerThread:12654 [system_info.py:probe():241] Probing system done
+2023-03-11 15:47:18,956 DEBUG   HandlerThread:12654 [system_monitor.py:probe():181] {'os': 'macOS-13.2.1-arm64-arm-64bit', 'python': '3.10.10', 'heartbeatAt': '2023-03-11T10:17:18.920512', 'startedAt': '2023-03-11T10:17:18.055091', 'docker': None, 'cuda': None, 'args': ('--activation=sigmoid', '--batch_size=64', '--beta=0.7756623221671055', '--beta1=0.7912446366933534', '--beta2=0.7977300326812835', '--dataset=fashion_mnist', '--epochs=5', '--epsilon=1e-08', '--hidden_size=32', '--learning_rate=0.001', '--loss=mean_squared_error', '--momentum=0.9569216376521988', '--num_layers=3', '--optimizer=nadam', '--output_activation=softmax', '--weight_decay=0.0005', '--weight_init=random'), 'state': 'running', 'program': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/vandit2209/CS6910_Assignment1.git', 'commit': 'e6b93ff3b4cfb82dd7cf7c964c7f15e96a0dbe1b'}, 'email': 'vanditshah.2209@gmail.com', 'root': '/Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1', 'host': 'Vandit-PC.local', 'username': 'vanditshah', 'executable': '/opt/homebrew/opt/python@3.10/bin/python3.10', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'total': 460.4317207336426, 'used': 8.326950073242188}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2023-03-11 15:47:18,956 INFO    HandlerThread:12654 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-11 15:47:18,956 INFO    HandlerThread:12654 [system_monitor.py:probe():185] Publishing system info
+2023-03-11 15:47:18,956 DEBUG   HandlerThread:12654 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-11 15:47:18,956 DEBUG   HandlerThread:12654 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-11 15:47:18,957 INFO    HandlerThread:12654 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-11 15:47:18,963 DEBUG   SenderThread:12654 [sender.py:send():336] send: files
+2023-03-11 15:47:18,963 INFO    SenderThread:12654 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-11 15:47:18,969 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-11 15:47:18,969 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: stop_status
+2023-03-11 15:47:19,281 DEBUG   SenderThread:12654 [sender.py:send():336] send: telemetry
+2023-03-11 15:47:19,283 DEBUG   SenderThread:12654 [sender.py:send():336] send: telemetry
+2023-03-11 15:47:19,285 DEBUG   SenderThread:12654 [sender.py:send():336] send: telemetry
+2023-03-11 15:47:19,750 DEBUG   SenderThread:12654 [sender.py:send():336] send: telemetry
+2023-03-11 15:47:19,751 DEBUG   SenderThread:12654 [sender.py:send():336] send: exit
+2023-03-11 15:47:19,751 INFO    SenderThread:12654 [sender.py:send_exit():559] handling exit code: 1
+2023-03-11 15:47:19,751 INFO    SenderThread:12654 [sender.py:send_exit():561] handling runtime: 0
+2023-03-11 15:47:19,751 INFO    SenderThread:12654 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 15:47:19,751 INFO    SenderThread:12654 [sender.py:send_exit():567] send defer
+2023-03-11 15:47:19,751 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,751 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-11 15:47:19,751 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,751 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-11 15:47:19,752 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 1
+2023-03-11 15:47:19,752 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,752 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-11 15:47:19,752 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,752 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-11 15:47:19,752 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 2
+2023-03-11 15:47:19,752 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,752 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-11 15:47:19,752 INFO    HandlerThread:12654 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-11 15:47:19,774 DEBUG   SystemMonitor:12654 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-11 15:47:19,774 DEBUG   SystemMonitor:12654 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-11 15:47:19,774 INFO    HandlerThread:12654 [interfaces.py:finish():175] Joined cpu
+2023-03-11 15:47:19,774 DEBUG   SystemMonitor:12654 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-11 15:47:19,774 INFO    HandlerThread:12654 [interfaces.py:finish():175] Joined disk
+2023-03-11 15:47:19,774 INFO    HandlerThread:12654 [interfaces.py:finish():175] Joined gpuapple
+2023-03-11 15:47:19,774 INFO    HandlerThread:12654 [interfaces.py:finish():175] Joined memory
+2023-03-11 15:47:19,774 INFO    HandlerThread:12654 [interfaces.py:finish():175] Joined network
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 3
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send():336] send: telemetry
+2023-03-11 15:47:19,775 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send():336] send: stats
+2023-03-11 15:47:19,775 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 4
+2023-03-11 15:47:19,775 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,775 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 5
+2023-03-11 15:47:19,775 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,775 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-11 15:47:19,775 DEBUG   SenderThread:12654 [sender.py:send():336] send: summary
+2023-03-11 15:47:19,775 INFO    SenderThread:12654 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 15:47:19,776 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,776 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-11 15:47:19,776 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 6
+2023-03-11 15:47:19,776 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:19,776 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-11 15:47:19,776 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:19,776 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-11 15:47:19,777 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 15:47:19,831 INFO    wandb-upload_0:12654 [upload_job.py:push():138] Uploaded file /var/folders/b6/68vmtkhx5_z5djknwm2hb7gr0000gn/T/tmpzvclao6xwandb/v6kv5vbd-wandb-metadata.json
+2023-03-11 15:47:19,843 INFO    Thread-13 :12654 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/wandb-summary.json
+2023-03-11 15:47:19,843 INFO    Thread-13 :12654 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/requirements.txt
+2023-03-11 15:47:19,843 INFO    Thread-13 :12654 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/wandb-metadata.json
+2023-03-11 15:47:20,211 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 7
+2023-03-11 15:47:20,211 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:20,211 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-11 15:47:20,212 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:20,212 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-11 15:47:20,212 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 8
+2023-03-11 15:47:20,212 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:20,212 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-11 15:47:20,212 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:20,212 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-11 15:47:20,212 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 9
+2023-03-11 15:47:20,212 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:20,212 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-11 15:47:20,213 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:20,213 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-11 15:47:20,213 INFO    SenderThread:12654 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-11 15:47:20,758 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 15:47:20,848 INFO    SenderThread:12654 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/config.yaml
+2023-03-11 15:47:20,848 INFO    SenderThread:12654 [dir_watcher.py:finish():392] scan: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files
+2023-03-11 15:47:20,848 INFO    SenderThread:12654 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/requirements.txt requirements.txt
+2023-03-11 15:47:20,848 INFO    SenderThread:12654 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/config.yaml config.yaml
+2023-03-11 15:47:20,851 INFO    SenderThread:12654 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/wandb-summary.json wandb-summary.json
+2023-03-11 15:47:20,854 INFO    SenderThread:12654 [dir_watcher.py:finish():406] scan save: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/wandb-metadata.json wandb-metadata.json
+2023-03-11 15:47:20,858 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 10
+2023-03-11 15:47:20,859 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 15:47:20,859 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:20,860 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-11 15:47:20,860 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:20,860 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-11 15:47:20,860 INFO    SenderThread:12654 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-11 15:47:21,714 INFO    wandb-upload_0:12654 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/requirements.txt
+2023-03-11 15:47:21,763 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 15:47:21,763 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 15:47:21,803 INFO    wandb-upload_2:12654 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/wandb-summary.json
+2023-03-11 15:47:21,846 INFO    wandb-upload_1:12654 [upload_job.py:push():138] Uploaded file /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/files/config.yaml
+2023-03-11 15:47:22,051 INFO    Thread-12 (_thread_body):12654 [sender.py:transition_state():587] send defer: 11
+2023-03-11 15:47:22,052 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:22,052 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-11 15:47:22,053 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:22,053 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-11 15:47:22,053 INFO    SenderThread:12654 [file_pusher.py:join():167] waiting for file pusher
+2023-03-11 15:47:22,053 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 12
+2023-03-11 15:47:22,054 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:22,054 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-11 15:47:22,054 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:22,054 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-11 15:47:22,641 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 13
+2023-03-11 15:47:22,642 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:22,642 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-11 15:47:22,642 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:22,642 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-11 15:47:22,642 INFO    SenderThread:12654 [sender.py:transition_state():587] send defer: 14
+2023-03-11 15:47:22,642 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 15:47:22,642 INFO    HandlerThread:12654 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-11 15:47:22,643 DEBUG   SenderThread:12654 [sender.py:send():336] send: final
+2023-03-11 15:47:22,643 DEBUG   SenderThread:12654 [sender.py:send():336] send: footer
+2023-03-11 15:47:22,643 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: defer
+2023-03-11 15:47:22,643 INFO    SenderThread:12654 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-11 15:47:22,644 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 15:47:22,644 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: server_info
+2023-03-11 15:47:22,645 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 15:47:22,645 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-11 15:47:22,645 DEBUG   SenderThread:12654 [sender.py:send_request():363] send_request: server_info
+2023-03-11 15:47:22,645 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-11 15:47:23,274 DEBUG   HandlerThread:12654 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-11 15:47:23,274 INFO    HandlerThread:12654 [handler.py:finish():841] shutting down handler
+2023-03-11 15:47:23,649 INFO    WriterThread:12654 [datastore.py:close():299] close: /Users/vanditshah/Documents/IIT M Material/Sem 2/DL/Assignments/A1/CS6910_Assignment1/wandb/run-20230311_154718-56aldgph/run-56aldgph.wandb
+2023-03-11 15:47:24,276 INFO    SenderThread:12654 [sender.py:finish():1493] shutting down sender
+2023-03-11 15:47:24,276 INFO    SenderThread:12654 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-11 15:47:24,276 INFO    SenderThread:12654 [file_pusher.py:join():167] waiting for file pusher
