@@ -117,13 +117,13 @@ class NeuralNetwork:
         gradients[f"a{self.n_layers - 1}"] = self.loss.getGradient(data.T, self.h[f"h{self.n_layers - 1}"])
         for i in range(self.n_layers - 1, 1, -1):
             gradients[f"W{i}"] = np.outer(gradients[f'a{i}'], self.h[f'h{i-1}'])
-            gradients[[f"b{i}"]] = gradients[f"a{i}"]
+            gradients[f"b{i}"] = gradients[f"a{i}"]
             gradients[f"h{i-1}"] = np.dot(self.parameters[f"W{i}"].T, gradients[f"a{i}"])
             gradients[f"a{i-1}"] = gradients[f"h{i-1}"] * self.activation.activate(self.a[f"a{i-1}"], backprop=True)
         
         # for the first layer
         gradients[f"W{1}"] = np.dot(gradients[f'a{1}'], self.h[f'h{1-1}'])
-        gradients[[f"b{1}"]] = gradients[f"a{1}"]
+        gradients[f"b{1}"] = gradients[f"a{1}"]
         gradients[f"h{1-1}"] = np.dot(self.parameters[f"W{1}"].T, gradients[f"a{1}"])
 
         return gradients
